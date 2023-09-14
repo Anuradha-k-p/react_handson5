@@ -1,4 +1,6 @@
-import React, { Component } from 'react';
+
+ import React, { Component } from 'react';
+import "./Style.css"
 
 const Form_Data = (FormComponent) => {
   return class FormWrapper extends Component {
@@ -18,14 +20,27 @@ const Form_Data = (FormComponent) => {
       e.preventDefault();
     };
 
+
     render() {
-      return (
+      return ( <>
         <FormComponent
+       {...this.props}
+       formData={this.state}
+       handleChange={this.handleChange}
+       handleSubmit={this.handleSubmit}
+        />
+        <h3 style={{background: "red"}} className='hoc1' > This is First Hoc</h3>
+        
+        <FormComponent
+
+
           {...this.props}
           formData={this.state}
           handleChange={this.handleChange}
           handleSubmit={this.handleSubmit}
         />
+        <h3 style={{background: "green"}} className='hoc2'> This is Second Hoc</h3>
+        </>
       );
     }
   };
