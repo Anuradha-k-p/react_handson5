@@ -24,6 +24,11 @@ const PureForm = () => {
     <div className='main'>
         <div className='child' id='child'>
             <h1>This is created <br/> using pure Component</h1>
+            <p>Defination:Component is Pure if
+Return value is only determined by it’s input values
+It’s return value is always the same for the same input values
+Class components that extend the React.PureComponent class are treated as pure
+component </p>
 
         </div>
         <div className='child'>
