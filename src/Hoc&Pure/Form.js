@@ -9,6 +9,14 @@ const Form = (props) => {
     <div className='main'>
          <div className='child' id='child'>
             <h1>This is created <br/> using Hoc Component</h1>
+            <p>Defination :In React, a Higher-Order Component (HOC) is a function that takes a 
+component as an input and returns a new component with additional 
+functionality. Essentially, it's a way to reuse component logic and share 
+it between different components.
+To use a HOC, you simply pass your component as an argument to the 
+function that defines the HOC. The function returns a new component with 
+the added functionality.</p>
+<p> in above example  on hover height of both captions of form get incresead and color get changed,but background color for both is different.for first caption letters are seprated on hover and for second separeted letter comes close </p>
 
         </div>
 
@@ -32,3 +40,4 @@ const Form = (props) => {
 };
 
 export default Form_Data(Form); 
+
